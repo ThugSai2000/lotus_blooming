@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+}
+
+#div1 {
+  width: 200px;
+  height: 40px;
+  background-color: antiquewhite;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 150px;
+  margin-left: -391px;
+
+  z-index: 7;
+}
+input {
+  display: block;
+  z-index: 7;
+  padding: 10px;
+  outline: none;
+  margin: 0 auto;
+}
+
+img {
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -425px;
+  margin-left: -90px;
+}
+#petal1 {
+  /*transform is one of the useful style attribute with this we can shift the origin to different positions*/
+  transform-origin: 50% 100% 0px;
+  /* transform: rotate(-20deg); */
+  z-index: 4;
+}
+#petal2 {
+  transform-origin: 50% 100% 0px;
+  /* transform: rotate(20deg); */
+  z-index: 4;
+}
+#petal3 {
+  transform-origin: 50% 100% 0px;
+  /* transform: rotate(-40deg); */
+  z-index: 3;
+}
+#petal4 {
+  transform-origin: 50% 100% 0px;
+  /* transform: rotate(40deg); */
+  z-index: 3;
+}
+#petal5 {
+  transform-origin: 50% 100% 0px;
+  /* transform: rotate(-60deg); */
+  z-index: 2;
+}
+#petal6 {
+  transform-origin: 50% 100% 0px;
+  /* transform: rotate(60deg); */
+  z-index: 2;
+}
+#petal7 {
+  transform-origin: 50% 100% 0px;
+  z-index: 5;
+}
+#stem {
+  width: 43px;
+  height: 389px;
+  /* i used multiple gradient in order to make stem a little attractive*/
+  background-image: linear-gradient(
+    180.5deg,
+    rgba(46, 255, 171, 1) 12.3%,
+    rgba(252, 251, 222, 0.46) 92%
+  );
+  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 74px;
+  margin-left: -20.5px;
+  border-radius: 32%;
+
+  z-index: -1;
+}
